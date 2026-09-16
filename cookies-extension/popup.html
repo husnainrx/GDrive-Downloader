@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body { font-family: system-ui, sans-serif; width: 340px; padding: 14px; margin: 0; }
+      h1 { font-size: 15px; margin: 0 0 10px; }
+      .step { font-size: 13px; color: #444; margin-bottom: 8px; }
+      #download { display: block; width: 100%; padding: 12px; font-size: 14px; cursor: pointer; border: 0; border-radius: 8px; color: #fff; background: #1a73e8; }
+      #download:disabled { opacity: .5; cursor: default; }
+      #status { font-size: 12px; color: #666; min-height: 16px; margin-top: 8px; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <h1>Get cookies.txt</h1>
+    <div class="step">1. Make sure you're signed in to drive.google.com.</div>
+    <div class="step">2. Push the button.</div>
+    <button id="download">Download cookies</button>
+    <div id="status">Saves cookies.txt to your Downloads folder (all cookies).</div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
